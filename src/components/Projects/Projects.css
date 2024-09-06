@@ -1,0 +1,35 @@
+.projects-section {
+  text-align: center;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  padding: 50px 0;
+}
+
+.projects {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.project-tile {
+  background-color: #333;
+  margin: 20px;
+  width: 300px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.project-image {
+  height: 150px;
+  background-color: #555;
+}
+
+.project-info {
+  padding: 20px;
+}
+
+.project-links a {
+  color: #00dfd8;
+  margin-right: 10px;
+  text-decoration: none;
+}

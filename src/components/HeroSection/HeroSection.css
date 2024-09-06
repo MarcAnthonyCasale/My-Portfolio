@@ -1,0 +1,36 @@
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 450px;
+
+  background-color: #1a1a1a;
+}
+
+.hero-text {
+  color: #ffffff;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+}
+
+.hero-text h2 {
+  font-size: 2rem;
+}
+
+.hero-text h3 {
+  font-size: 1.5rem;
+}
+
+.highlight {
+  background: linear-gradient(to right, #007CF0, #00DFD8, #00DFD8, #FF0080);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.hero-image img {
+  border-radius: 50%;
+  width: 150px;
+  border: 4px solid #ff0080;
+}

@@ -1,0 +1,16 @@
+.footer {
+  text-align: center;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  padding: 20px 0;
+}
+
+.footer-content {
+  margin-bottom: 20px;
+}
+
+.footer-nav a {
+  color: #ffffff;
+  margin: 0 15px;
+  text-decoration: none;
+}
