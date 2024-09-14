@@ -11,7 +11,7 @@ const HeroSection = () => {
           I am a <br /><span className="highlight">Web developer/Web Designer</span></h2>
         </div>
         <div className="hero-image">
-          <img src="/assets/DP.jpg" alt="Profile" />
+          <img src={`${process.env.PUBLIC_URL}/assets/DP.jpg`} alt="Profile" />
         </div>
       </div>
     </div>

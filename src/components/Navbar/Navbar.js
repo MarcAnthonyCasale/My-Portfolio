@@ -13,7 +13,7 @@ const Navbar = () => {
       <div className="nav-content">
         <div className="logo">
           <span>
-            <img src="/assets/Logo.png" alt="Logo"/>
+            <img src={`${process.env.PUBLIC_URL}/assets/Logo.png`} alt="Logo"/>
           </span>
         </div>
         <span className="menu-toggle" onClick={toggleMenu}>
