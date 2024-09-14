@@ -1,20 +1,19 @@
 import React from 'react';
 import './RotatingImages.css';
 
-
 const images = [
   '/assets/image1.jpg',  
-  '/assets/image2.jpg',
+  '/assets/image2.png',
   '/assets/image3.jpg',
   '/assets/image4.jpg',
-  '/assets/image5.jpg',
-  '/assets/image5.jpg',
+  '/assets/image5.png',
+  '/assets/image6.png',
 ];
 
 
 function RotatingSolarGallery() {
   return (
-    <div className="Images-section">
+    <div className="Images-section"  >
       <div className="solar-gallery-container">
         <div className="solar-gallery">
           {images.slice(0).map((image, index) => (

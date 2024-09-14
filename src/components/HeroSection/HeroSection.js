@@ -4,13 +4,15 @@ import './HeroSection.css';
 const HeroSection = () => {
   return (
     <div className="hero-section">
-      <div className="hero-text">
-        <h1>Hi <span role="img" aria-label="wave">👋</span>,</h1>
-        <h2>My name is <span className="highlight">Marc Anthony Casale</span></h2>
-        <h3>I am a Web developer/Web Designer</h3>
-      </div>
-      <div className="hero-image">
-        <img src="/assets/DP.jpg" alt="Profile" />
+      <div className="hero-content">
+        <div className="hero-text">
+          <h2>Hi <span role="img" aria-label="wave">👋</span>
+          , My name is <br /><span className="highlight">Marc Anthony Casale <br /></span>
+          I am a <br /><span className="highlight">Web developer/Web Designer</span></h2>
+        </div>
+        <div className="hero-image">
+          <img src="/assets/DP.jpg" alt="Profile" />
+        </div>
       </div>
     </div>
   );
