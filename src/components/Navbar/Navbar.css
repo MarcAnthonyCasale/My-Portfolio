@@ -1,74 +1,103 @@
-.navbar {
-  background-color: #191919;
-  padding: 10px 20px; 
-  text-align: center;
-}
-
-.nav-content {
-  max-width: 1200px;
-  margin: 0 auto;
+/* Header Styles */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 1000;
+  background: transparent;
+  transition: background-color 0.3s ease, padding 0.3s ease;
+}
+
+.header.scrolled {
+  background: #000000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 15px 30px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo a {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #CF1F1F;
+  text-decoration: none;
 }
 
 .logo img {
   height: 60px; 
 }
 
-.nav-links {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+.nav {
   display: flex;
+  align-items: center;
 }
 
-.nav-links li {
-  margin-left: 20px;
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
 }
 
-.nav-links a {
+.nav-links li a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #FFF;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #CF1F1F;
+}
+
+.cta .btn-primary {
+  padding: 10px 20px;
+  background-color: #CF1F1F;
   color: #fff;
   text-decoration: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
 }
 
-.menu-toggle {
-  display: none; /* Default hide */
-  font-size: 24px; /* Adjust size */
+.cta .btn-primary:hover {
+  background-color: #e6006e;
+}
+
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
   cursor: pointer;
-  color: #fff; /* Text color */
-  padding: 10px; /* Add padding for better click area */
 }
+
+.hamburger span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  transition: transform 0.3s ease;
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
-  .nav-content {
-    flex-direction: row;
-    align-items: space-between;
-    position: relative;
+  .nav {
+    display: none; /* Hide navigation on small screens */
   }
 
-  .nav-links {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background-color: #6d6c6c; 
-    display: none; 
-    text-align: center;
-    padding: 0;
-    margin: 0;
-  }
-
-  .nav-links.active {
-    display: block;
-  }
-
-  .nav-links li {
-    margin: 10px 0;
-  }
-
-  .menu-toggle {
-    display: block;
-    cursor: pointer;
-    color: #fff;
+  .hamburger {
+    display: flex;
   }
 }

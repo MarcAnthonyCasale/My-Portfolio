@@ -1,6 +1,6 @@
 .projects-section {
   text-align: center;
-  background-color: #1a1a1a;
+  background-color: #191919;
   color: #ffffff;
   padding: 50px 0;
 }
@@ -21,6 +21,13 @@
   border-radius: 8px;
   overflow: hidden;
 }
+
+.project-tile:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 20px rgba(0, 223, 216, 0.6);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
 
 .project-image {
   width: 100%;

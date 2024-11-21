@@ -1,34 +1,43 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Navbar.css';
 
-const Navbar = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
+const Header = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
 
-  const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
-  };
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   return (
-    <nav className="navbar">
-      <div className="nav-content">
+    <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
+      <div className="container">
         <div className="logo">
           <span>
             <img src={`${process.env.PUBLIC_URL}/assets/Logo.png`} alt="Logo"/>
           </span>
         </div>
-        <span className="menu-toggle" onClick={toggleMenu}>
-          ☰
-        </span>
-        <ul className={`nav-links ${menuOpen ? 'active' : ''}`}>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#techstack">Tech Stack</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+        <nav className="nav">
+          <ul className="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+       
+        <div className="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
-    </nav>
+    </header>
   );
 };
 
-export default Navbar;
+export default Header;

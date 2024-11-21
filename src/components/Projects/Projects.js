@@ -8,7 +8,9 @@ const Projects = () => {
       <p>Things I've built so far</p>
       <div className="projects">
         <div className="project-tile">
-          <div className="project-image"><img src={`${process.env.PUBLIC_URL}/assets/image1.jpg`} alt="Project" /></div>
+          <div className="project-image">
+            <img src={`${process.env.PUBLIC_URL}/assets/image1.jpg`} alt="Project" />
+          </div>
           <div className="project-info">
             <h3>Crypto Pond</h3>
             <p>TheCryptoPond is the premier free crypto networking group in the space.</p>
@@ -17,6 +19,7 @@ const Projects = () => {
             </div>
           </div>
         </div>
+
         <div className="project-tile">
           <div className="project-image"><img src={`${process.env.PUBLIC_URL}/assets/image2.png`} alt="Project" /></div>
           <div className="project-info">

@@ -1,38 +1,114 @@
+/* Hero Section Styles */
 .hero-section {
+  font-family: 'Lora', serif;
+  background-color: #191919;
+  height: 100vh;
+  background-image: url("https://img.freepik.com/free-vector/sports-style-halftone-memphis-black-background_1017-33619.jpg?t=st=1732229116~exp=1732232716~hmac=943c8fd358c578b54faed549bf5a803cc7327d35cb8773b9596a583d57e9ce1f&w=1800");
+  background-size: cover;
+  background-position: center;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #191919; 
-  padding: 50px 0;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.795);
+  z-index: 1;
 }
 
 .hero-content {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  width: 60%;
+  position: relative;
+  z-index: 2;
+  padding: 0 20px; /* Added padding for mobile responsiveness */
 }
 
 .hero-text {
   color: #ffffff;
-  width: 50%;
+  max-width: 60%;
 }
 
-.hero-text h2 {
-  font-size: 2rem;
-  
+.subtitle {
+  font-family: 'Lora', serif;
+  font-size: 1.5rem;
+  color: #CF1F1F;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
 }
 
-
-.highlight {
-  background: linear-gradient(to right, #007CF0, #00DFD8, #00DFD8, #FF0080);
-  -webkit-background-clip: text;
-  color: transparent;
+.title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1rem;
 }
 
+.location-container {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.location {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  color: #ffffff;
+}
+
+.location span {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.location p {
+  font-size: 1rem;
+}
 .hero-image img {
-  border-radius: 50%;
-  width: 100%;
-  max-width: 300px;
-  height: auto;
-  border: 4px solid #ff0080;
+  width: 100%; /* Ensure the image stretches to the full width of its container */
+  max-width: 350px; /* Maintain a max-width for the image to avoid being too large */
+  height: auto; /* Maintain aspect ratio */
+  border: 4px solid #995b7a00; /* A border color that stands out */
+  border-radius: 50%; /* Keep the circular border */
+  object-fit: cover; /* Ensure the image doesn't get distorted */
+}
+
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .location-container {
+    flex-direction: column;
+    margin-top: 1.5rem;
+  }
+
+  .location span {
+    font-size: 1rem;
+  }
+
+  .hero-image img {
+    width: 250px;
+  }
 }
