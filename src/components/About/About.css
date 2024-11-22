@@ -1,0 +1,130 @@
+.about-section {
+  background-color: #181918;
+  color: #fff;
+  text-align: center;
+  height: 50vh;
+  padding: 50px 20px 50px 20px;
+
+}
+
+.section-title {
+  font-size: 36px;
+  color: #D9534F;
+  margin-bottom: 20px;
+}
+
+.intro-paragraph {
+  font-size: 18px;
+  color: #bbb;
+  max-width: 800px;
+  margin: 0 auto 40px;
+}
+
+.progressbars-row {
+  display: flex;
+  justify-content: center;
+  gap: 70px; 
+  margin-bottom: 50px;
+}
+
+.progressbar-col {
+  position: relative;
+  text-align: center;
+}
+
+.text-container {
+  width: 70%;
+  margin: 0 auto;
+  color: #ddd;
+}
+
+.progressbar {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.progressbar canvas {
+  width: 100% !important;
+  border-radius: 50%;
+}
+
+.progress-text {
+  position: inherit;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+  color: #fff;
+  font-weight: bold;
+}
+
+h4 {
+  margin-top: 70px;
+  font-size: 20px;
+  color: #ddd;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .about-section {
+    padding: 40px 20px;
+    height: auto; 
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+
+  .intro-paragraph {
+    font-size: 16px;
+    margin: 0 auto 30px;
+  }
+
+  .progressbars-row {
+    flex-direction: column; 
+    gap: 20px; 
+  }
+
+  .progressbar-col {
+    width: 100%; 
+  }
+
+  .progressbar {
+    width: 120px;
+    height: 120px; 
+  }
+
+  .progress-text {
+    font-size: 16px;
+  }
+
+  h4 {
+    font-size: 18px;
+  }
+}
+
+/* Smaller devices */
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 24px;
+  }
+
+  .intro-paragraph {
+    font-size: 14px;
+  }
+
+  .progressbar {
+    width: 100px;
+    height: 100px; 
+  }
+
+  .progress-text {
+    font-size: 14px;
+  }
+
+  h4 {
+    font-size: 16px;
+  }
+}

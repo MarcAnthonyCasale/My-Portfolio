@@ -2,7 +2,8 @@
   text-align: center;
   background-color: #191919;
   color: #ffffff;
-  padding: 50px 0;
+  padding: 50px 20px 50px 20px;
+
 }
 .icons {
   display: flex;
@@ -30,7 +31,7 @@
 }
 
 .icons i:hover {
-  background-color: #00dfd8;
+  background-color: #CF1F1F;
   transform: scale(1.1);
 }
 

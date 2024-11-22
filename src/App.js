@@ -6,6 +6,7 @@ import HeroSection from './components/HeroSection/HeroSection';
 import TechStack from './components/TechStackP/TechStackP';
 import Projects from './components/Projects/Projects';
 import Footer from './components/Footer/Footer';
+import About from './components/About/About';
 function App() {
   return (
     
@@ -16,6 +17,7 @@ function App() {
 
       <Navbar />
       <HeroSection />
+      <About />
       <TechStack />
       <Projects />
       <Footer />

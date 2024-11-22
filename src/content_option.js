@@ -9,7 +9,7 @@ const introdata = {
     animated: {
         first: "WEB DEVELOPER",
         second: "WEB DESIGNER",
-        third: "FREELANCE",
+        third: "FREELANCER",
     },
 };
 
