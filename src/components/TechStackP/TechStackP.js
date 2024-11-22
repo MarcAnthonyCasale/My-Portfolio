@@ -23,6 +23,16 @@ const TechStack = () => {
         </div>
 
         <div className="icon-wrapper">
+          <i className="fab fa-node-js"></i>
+          <span className="tooltip">Node.js</span>
+        </div>
+
+        <div className="icon-wrapper">
+          <i className="fas fa-database"></i>
+          <span className="tooltip">MySQL</span>
+        </div>
+
+        <div className="icon-wrapper">
           <i className="fab fa-react"></i>
           <span className="tooltip">React</span>
         </div>
@@ -37,9 +47,12 @@ const TechStack = () => {
           <span className="tooltip">Laravel</span>
         </div>
 
+        <div className="icon-wrapper">
+          <i className="fab fa-css3-alt"></i>
+          <span className="tooltip">Tailwind CSS</span>
+        </div>
       </div>
       <div className="icons">
-
         <div className="icon-wrapper">
           <i className="fab fa-wordpress"></i>
           <span className="tooltip">WordPress</span>
@@ -69,8 +82,22 @@ const TechStack = () => {
           <i className="fab fa-git"></i>
           <span className="tooltip">Git</span>
         </div>
-      </div>
 
+        <div className="icon-wrapper">
+          <i className="fab fa-shopify"></i>
+          <span className="tooltip">Shopify</span>
+        </div>
+
+        <div className="icon-wrapper">
+          <i className="fas fa-laptop-code"></i>
+          <span className="tooltip">Webflow</span>
+        </div>
+
+        <div className="icon-wrapper">
+          <i className="fas fa-project-diagram"></i>
+          <span className="tooltip">GHL</span>
+        </div>
+      </div>
     </div>
   );
 };

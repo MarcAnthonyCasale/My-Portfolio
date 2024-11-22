@@ -1,4 +1,3 @@
-/* Header Styles */
 .header {
   position: fixed;
   top: 0;
@@ -11,6 +10,7 @@
   z-index: 1000;
   background: transparent;
   transition: background-color 0.3s ease, padding 0.3s ease;
+  font-family: 'Saira', Helvetica, Arial, sans-serif;
 }
 
 .header.scrolled {
@@ -33,6 +33,7 @@
   font-weight: 700;
   color: #CF1F1F;
   text-decoration: none;
+  font-family: 'Saira', Helvetica, Arial, sans-serif;
 }
 
 .logo img {
@@ -55,6 +56,7 @@
   font-size: 1rem;
   color: #FFF;
   transition: color 0.3s ease;
+  font-family: 'Nunito', Helvetica, Arial, sans-serif;
 }
 
 .nav-links li a:hover {
@@ -75,7 +77,6 @@
   background-color: #e6006e;
 }
 
-/* Hamburger Menu */
 .hamburger {
   display: none;
   flex-direction: column;
@@ -91,10 +92,9 @@
   transition: transform 0.3s ease;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   .nav {
-    display: none; /* Hide navigation on small screens */
+    display: none;
   }
 
   .hamburger {

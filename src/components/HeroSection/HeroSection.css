@@ -1,6 +1,6 @@
 /* Hero Section Styles */
 .hero-section {
-  font-family: 'Lora', serif;
+  font-family: 'Nunito', sans-serif; 
   background-color: #191919;
   height: 100vh;
   background-image: url("https://img.freepik.com/free-vector/sports-style-halftone-memphis-black-background_1017-33619.jpg?t=st=1732229116~exp=1732232716~hmac=943c8fd358c578b54faed549bf5a803cc7327d35cb8773b9596a583d57e9ce1f&w=1800");
@@ -11,7 +11,6 @@
   align-items: center;
   justify-content: center;
   padding: 20px 20px;
-
 }
 
 .hero-overlay {
@@ -31,7 +30,7 @@
   width: 60%;
   position: relative;
   z-index: 2;
-  padding: 0 20px; /* Added padding for mobile responsiveness */
+  padding: 0 20px; 
 }
 
 .hero-text {
@@ -40,7 +39,7 @@
 }
 
 .subtitle {
-  font-family: 'Lora', serif;
+  font-family: 'Saira', Helvetica, Arial, sans-serif; 
   font-size: 1.5rem;
   color: #CF1F1F;
   margin-bottom: 0.5rem;
@@ -48,7 +47,7 @@
 }
 
 .title {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Saira', Helvetica, Arial, sans-serif; 
   font-size: 4rem;
   font-weight: 700;
   line-height: 1.2;
@@ -63,7 +62,7 @@
 
 .location {
   text-align: center;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Nunito', sans-serif; 
   color: #ffffff;
 }
 
@@ -75,6 +74,7 @@
 .location p {
   font-size: 1rem;
 }
+
 .hero-image img {
   width: 100%; 
   max-width: 350px; 

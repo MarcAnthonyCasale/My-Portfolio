@@ -1,0 +1,126 @@
+/* General Styling */
+#resume {
+  padding: 50px 0;
+  background-color: #121212;
+  color: #fff;
+  font-family: "Nunito", Helvetica, Arial, sans-serif; 
+}
+
+#resume .container {
+  display: grid;
+  justify-content: center;
+}
+
+#resume .exp {
+  display: flex;
+  gap: 10%;
+}
+
+.resume-header {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  font-family: "Saira", Helvetica, Arial, sans-serif; 
+}
+
+.space-border {
+  width: 100px;
+  height: 4px;
+  background: #cf1f1f;
+  margin: 10px auto;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  font-weight: 900;
+  color: #fff;
+  display: inline-block;
+  padding-bottom: 5px;
+  font-family: "Saira", Helvetica, Arial, sans-serif;
+}
+
+/* Timeline Styling */
+.timeline {
+  list-style: none;
+  padding-left: 0;
+}
+
+.timeline-item {
+  width: 400px;
+  height: 175px;
+  border-left: 1px solid rgba(255, 255, 255, .2);
+  bottom: 20px;
+  position: relative;
+}
+
+.timeline-item:last-child {
+  width: 400px;
+  height: 175px;
+  border-left: 0px solid;
+  bottom: 20px;
+  position: relative;
+}
+
+.number {
+  color: #fff;
+  position: absolute;
+  left: -20px;
+  top: -3px;
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #cf1f1f;
+  counter-increment: list;
+  content: counter(list);
+}
+
+.timeline-date {
+  color: #fff;
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+  padding-left: 40px;
+  height: 30px;
+  background: linear-gradient(90deg, rgba(255, 255, 255, .1) 0%, rgba(255, 255, 255, 0) 100%);
+  font-family: "Saira", Helvetica, Arial, sans-serif;
+}
+
+.timeline-details {
+  padding: 0 0 40px 40px;
+}
+
+.timeline-details .position-title {
+  font-size: 1rem;
+  font-weight: bold;
+  display: block;
+  font-family: "Saira", Helvetica, Arial, sans-serif;
+}
+
+.timeline-details .company-name {
+  font-style: italic;
+  font-size: 0.9rem;
+  color: #cf1f1f;
+  display: block;
+  margin-top: 5px;
+}
+
+.timeline-details .description {
+  font-size: 0.9rem;
+  margin-top: 5px;
+  color: #ddd;
+  font-family: "Nunito", Helvetica, Arial, sans-serif; 
+}
+
+/* Media Query */
+@media (max-width: 768px) {
+  .resume-header {
+    font-size: 2rem;
+  }
+
+  .timeline-item {
+    padding: 15px;
+  }
+}
