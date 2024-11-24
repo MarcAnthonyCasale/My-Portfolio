@@ -24,8 +24,6 @@ const MyResume = () => {
                   <span className="company-name">Pylon International Trading Corporation</span>
                   <span className="description">
                     IT Company supporting hardware and software installations for Local Government Units and private organizations.
-                    <br />
-                    Contact: Mark Granada Jalando-on
                   </span>
                 </p>
               </li>
@@ -37,8 +35,6 @@ const MyResume = () => {
                   <span className="company-name">Lilypad Digital Solutions</span>
                   <span className="description">
                     A team of developers, strategists, and storytellers in Metro Manila, Philippines.
-                    <br />
-                    Contact: Charles Buking
                   </span>
                 </p>
               </li>
@@ -55,13 +51,6 @@ const MyResume = () => {
                   </span>
                 </p>
               </li>
-             
-            </ul>
-          </div>
-          {/* Experience Section 2 */}
-          <div className="col-md-6">
-            <h3 className="section-title">Work Experiences (Part 2)</h3>
-            <ul className="timeline">
               <li className="timeline-item">
               <div className="number">4</div>
               <h3 className="timeline-date">02/2023 - 04/2023</h3>
@@ -73,6 +62,13 @@ const MyResume = () => {
                   </span>
                 </p>
               </li>
+            </ul>
+          </div>
+          {/* Experience Section 2 */}
+          <div className="col-md-6">
+            <h3 className="section-title">Work Experiences (Part 2)</h3>
+            <ul className="timeline">
+             
               <li className="timeline-item">
               <div className="number">5</div>
               <h3 className="timeline-date">06/2022 - 02/2023</h3>
@@ -81,8 +77,6 @@ const MyResume = () => {
                   <span className="company-name">Google Developer Group Manila</span>
                   <span className="description">
                     An independent group with no official links to Google Corporation.
-                    <br />
-                    Contact: Nina Garcia
                   </span>
                 </p>
               </li>
@@ -94,6 +88,29 @@ const MyResume = () => {
                   <span className="company-name">MDM SYSTEMS, INC.</span>
                   <span className="description">
                     Focused on Laravel-based application development for enterprise-level clients.
+                  </span>
+                </p>
+              </li>
+              <li className="timeline-item">
+                <div className="number">7</div>
+                <h3 className="timeline-date">03/2023 - 02/2024</h3>
+                <p className="timeline-details">
+                  <span className="position-title">Full Stack Web Developer</span>
+                  <span className="company-name">ThinkBit Solution Phils, Inc.</span>
+                  <span className="description">
+                    Focused on managing and developing websites using WordPress and Webflow, ensuring responsive design, seamless functionality, and optimizing user experience.
+                  </span>
+                </p>
+              </li>
+              <li className="timeline-item">
+                <div className="number">8</div>
+                <h3 className="timeline-date">03/2024 - Present</h3>
+                <p className="timeline-details">
+                  <span className="position-title">Full Stack Web Developer</span>
+                  <span className="company-name">Rampdd</span>
+                  <span className="description">
+                    Responsible for developing and managing both frontend and backend tasks using WordPress, Laravel, Webflow,
+                    and GHL, as well as handling hosting and domain management with GoDaddy.
                   </span>
                 </p>
               </li>

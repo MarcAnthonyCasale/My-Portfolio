@@ -59,9 +59,10 @@
 }
 
 .footer-highlight {
-  background: linear-gradient(to right, #c300ff, #cb25fd, #ff208f, #FF0080);
+  background: linear-gradient(to right, #ff2525, #f37e7e, #ff4958, #ff2525);
   -webkit-background-clip: text;
   color: transparent;
+  font-weight: 900;
 }
 
 @media (max-width: 768px) {

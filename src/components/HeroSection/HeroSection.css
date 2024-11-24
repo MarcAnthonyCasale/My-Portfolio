@@ -3,14 +3,14 @@
   font-family: 'Nunito', sans-serif; 
   background-color: #191919;
   height: 100vh;
-  background-image: url("https://img.freepik.com/free-vector/sports-style-halftone-memphis-black-background_1017-33619.jpg?t=st=1732229116~exp=1732232716~hmac=943c8fd358c578b54faed549bf5a803cc7327d35cb8773b9596a583d57e9ce1f&w=1800");
+  background-image: url("../../assets/hero-cover.jpg");
   background-size: cover;
   background-position: center;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px 20px;
+  padding: 50px 20px;
 }
 
 .hero-overlay {
@@ -90,6 +90,8 @@
   .hero-content {
     flex-direction: column;
     text-align: center;
+    padding: 50px 20px;
+
   }
 
   .hero-text {
@@ -112,5 +114,13 @@
 
   .hero-image img {
     width: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 80px;
   }
 }

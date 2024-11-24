@@ -3,7 +3,7 @@
   padding: 50px 0;
   background-color: #121212;
   color: #fff;
-  font-family: "Nunito", Helvetica, Arial, sans-serif; 
+  font-family: "Nunito", Helvetica, Arial, sans-serif;
 }
 
 #resume .container {
@@ -14,13 +14,15 @@
 #resume .exp {
   display: flex;
   gap: 10%;
+  flex-wrap: wrap; /* Added for responsiveness */
+  justify-content: center; /* Center content on smaller screens */
 }
 
 .resume-header {
   font-size: 2.5rem;
   font-weight: bold;
   text-align: center;
-  font-family: "Saira", Helvetica, Arial, sans-serif; 
+  font-family: "Saira", Helvetica, Arial, sans-serif;
 }
 
 .space-border {
@@ -44,23 +46,20 @@
 .timeline {
   list-style: none;
   padding-left: 0;
+  display: flex;
+  flex-wrap: wrap; /* Added for responsiveness */
+  justify-content: center; /* Center timeline items */
+  gap: 20px; /* Added gap for better spacing */
 }
 
 .timeline-item {
   width: 400px;
   height: 175px;
-  border-left: 1px solid rgba(255, 255, 255, .2);
-  bottom: 20px;
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
   position: relative;
+  padding-left: 20px; /* Adjust padding for smaller screens */
 }
 
-.timeline-item:last-child {
-  width: 400px;
-  height: 175px;
-  border-left: 0px solid;
-  bottom: 20px;
-  position: relative;
-}
 
 .number {
   color: #fff;
@@ -84,7 +83,7 @@
   margin-bottom: 5px;
   padding-left: 40px;
   height: 30px;
-  background: linear-gradient(90deg, rgba(255, 255, 255, .1) 0%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%);
   font-family: "Saira", Helvetica, Arial, sans-serif;
 }
 
@@ -111,16 +110,82 @@
   font-size: 0.9rem;
   margin-top: 5px;
   color: #ddd;
-  font-family: "Nunito", Helvetica, Arial, sans-serif; 
+  font-family: "Nunito", Helvetica, Arial, sans-serif;
 }
 
 /* Media Query */
 @media (max-width: 768px) {
+  #resume {
+    padding: 40px 20px;
+  }
+
   .resume-header {
     font-size: 2rem;
   }
 
+  .timeline {
+    flex-direction: column; /* Stack timeline items */
+    gap: 15px;
+  }
+
   .timeline-item {
-    padding: 15px;
+    width: 100%;
+    height: auto; /* Adjust height for better fit */
+    border-left: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 15px 0;
+  }
+
+  .number {
+    position: relative;
+    left: auto;
+    top: auto;
+    margin-bottom: 10px;
+  }
+
+  .timeline-date {
+    padding-left: 0;
+    text-align: left;
+  }
+
+  .timeline-details {
+    padding: 0;
+  }
+
+  .section-title {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .resume-header {
+    font-size: 1.8rem;
+  }
+
+  .timeline-item {
+    padding: 10px 0;
+  }
+
+  .number {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 0.9rem;
+  }
+
+  .timeline-date {
+    font-size: 1rem;
+  }
+
+  .timeline-details .position-title {
+    font-size: 0.9rem;
+  }
+
+  .timeline-details .company-name {
+    font-size: 0.8rem;
+  }
+
+  .timeline-details .description {
+    font-size: 0.8rem;
   }
 }

@@ -2,7 +2,6 @@
   background-color: #181918;
   color: #fff;
   text-align: center;
-  height: 50vh;
   padding: 50px 20px 50px 20px;
   font-family: 'Nunito', Helvetica, Arial, sans-serif;
 }
@@ -14,9 +13,10 @@
   font-family: 'Saira', Helvetica, Arial, sans-serif;
 }
 
-.col #h2{
+.col #h2 {
   font-family: 'Saira', Helvetica, Arial, sans-serif;
 }
+
 .intro-paragraph {
   font-size: 18px;
   color: #bbb;
@@ -74,6 +74,7 @@ h4 {
 @media (max-width: 768px) {
   .about-section {
     padding: 40px 20px;
+    width: 90%;
     height: auto;
   }
 
@@ -102,6 +103,7 @@ h4 {
 
   .progress-text {
     font-size: 16px;
+    top: 70%;
   }
 
   h4 {
@@ -110,6 +112,10 @@ h4 {
 }
 
 @media (max-width: 480px) {
+  .about-section {
+    width: 90%;
+    height: auto;
+  }
   .section-title {
     font-size: 24px;
   }
@@ -125,9 +131,17 @@ h4 {
 
   .progress-text {
     font-size: 14px;
+    top: 70%;
   }
 
   h4 {
     font-size: 16px;
+  }
+
+  .about-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
