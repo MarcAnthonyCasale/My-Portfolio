@@ -1,4 +1,8 @@
 .projects-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 50px 30px;
   background-color: #0d1117;
   color: #ffffff;
@@ -18,17 +22,25 @@
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
-  justify-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px 0px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  max-width: 80%;
+  margin: 0 auto;
 }
 
 .project-card {
   background: #161b22;
   border-radius: 10px;
   overflow: hidden;
+  width: 320px;
+  height: 480px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 20px;
+  position: relative; /* Added for button positioning */
 }
 
 .project-card:hover {
@@ -59,6 +71,13 @@
   margin-bottom: 20px;
 }
 
+.project-links {
+  position: absolute; /* Ensures it's fixed at the bottom */
+  bottom: 20px;
+  left: 50%; /* Centers horizontally */
+  transform: translateX(-50%);
+}
+
 .project-links a {
   font-size: 0.9rem;
   color: #1f78ff;
@@ -74,7 +93,12 @@
   color: #ffffff;
 }
 
-/* Media Query for Responsive Design */
+@media (max-width: 1024px) {
+  .projects-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 @media (max-width: 768px) {
   .projects-section h2 {
     font-size: 2rem;
@@ -96,11 +120,15 @@
     font-size: 0.8rem;
     padding: 5px 8px;
   }
+
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 480px) {
   .projects-section {
-    padding: 40px 30px;
+    padding: 42px 0px;
   }
 
   .projects-section h2 {
@@ -113,10 +141,15 @@
 
   .projects-grid {
     gap: 15px;
+    grid-template-columns: 1fr;
+    width: 100%;
   }
 
   .project-card {
     width: 100%;
+    margin: 0px;
+    height: 400px;
+
   }
 
   .project-image img {

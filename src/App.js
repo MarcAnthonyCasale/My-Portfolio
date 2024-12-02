@@ -8,6 +8,7 @@ import Projects from './components/Projects/Projects';
 import Footer from './components/Footer/Footer';
 import About from './components/About/About';
 import MyResume from './components/MyResume/MyResume';
+import Logo from './components/Logo/Logo';
 function App() {
   return (
     
@@ -23,6 +24,7 @@ function App() {
       <About />
       <TechStack />
       <MyResume />
+      <Logo />
       <Projects />
       <Footer />
     </div>

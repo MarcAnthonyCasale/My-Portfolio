@@ -6,7 +6,7 @@ const Projects = () => {
     {
       title: "Bluff City Paving",
       description: "Bluff City Asphalt provides expert asphalt paving, repair, and maintenance services for residential, commercial, and industrial clients.",
-      image: `${process.env.PUBLIC_URL}/assets/image1.jpg`,
+      image: `${process.env.PUBLIC_URL}/assets/image3.png`,
       link: "https://bluffcityasphalt.com/",
     },
     {
@@ -18,14 +18,14 @@ const Projects = () => {
     {
       title: "Asphalt Services Inc.",
       description: "Asphalt Services Inc. specializes in high-quality asphalt paving, repair, and maintenance for residential, commercial, and industrial projects.",
-      image: `${process.env.PUBLIC_URL}/assets/image3.jpg`,
+      image: `${process.env.PUBLIC_URL}/assets/image1.png`,
       link: "https://asphaltservicesinc.com/",
     },
     {
-      title: "Klik Media Group",
-      description: "This is a sample project description...",
-      image: `${process.env.PUBLIC_URL}/assets/image4.jpg`,
-      link: "home",
+      title: "King's College of the Philippines",
+      description: "King’s College of the Philippines understands the value of digitalization to further its goals and mission to current and prospective constituents. ",
+      image: `${process.env.PUBLIC_URL}/assets/image6.png`,
+      link: "https://kcp.edu.ph/",
     },
     {
       title: "Kode Across",
@@ -36,7 +36,7 @@ const Projects = () => {
     {
       title: "R & S Paving LLC",
       description: "Specializes in driveway paving, parking lot resurfacing, sealcoating, and concrete work for residential and commercial clients.",
-      image: `${process.env.PUBLIC_URL}/assets/image6.png`,
+      image: `${process.env.PUBLIC_URL}/assets/image7.png`,
       link: "https://www.rspavingllc.com/",
     },
   ];
@@ -44,7 +44,7 @@ const Projects = () => {
   return (
     <div className="projects-section">
       <h2>Projects</h2>
-      <p>Things I've built so far</p>
+      <p>A Glimpse Into My Recent Work</p>
       <div className="projects-grid">
         {projects.map((project, index) => (
           <div className="project-card" key={index}>
