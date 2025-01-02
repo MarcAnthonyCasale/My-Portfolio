@@ -2,22 +2,22 @@ import React from 'react';
 import './Logo.css';
 
 const logos = [
-  '/assets/logo/1.png',
-  '/assets/logo/2.png',
-  '/assets/logo/3.png',
-  '/assets/logo/4.png',
-  '/assets/logo/5.png',
-  '/assets/logo/6.png',
-  '/assets/logo/7.png',
-  '/assets/logo/8.png',
-  '/assets/logo/9.png',
-  '/assets/logo/10.png',
-  '/assets/logo/11.png',
-  '/assets/logo/12.png',
-  '/assets/logo/13.png',
-  '/assets/logo/14.png',
-  '/assets/logo/15.png',
-  '/assets/logo/16.png',
+ `${process.env.PUBLIC_URL}/assets/Logo/1.png`,
+ `${process.env.PUBLIC_URL}/assets/Logo/2.png`,
+ `${process.env.PUBLIC_URL}/assets/Logo/3.png`,
+ `${process.env.PUBLIC_URL}/assets/Logo/4.png`,
+ `${process.env.PUBLIC_URL}/assets/Logo/5.png`,
+ `${process.env.PUBLIC_URL}/assets/Logo/6.png`,
+ `${process.env.PUBLIC_URL}/assets/Logo/7.png`,
+ `${process.env.PUBLIC_URL}/assets/Logo/8.png`,
+ `${process.env.PUBLIC_URL}/assets/Logo/9.png`,
+ `${process.env.PUBLIC_URL}/assets/Logo/10.png`,
+ `${process.env.PUBLIC_URL}/assets/Logo/11.png`,
+ `${process.env.PUBLIC_URL}/assets/Logo/12.png`,
+ `${process.env.PUBLIC_URL}/assets/Logo/13.png`,
+ `${process.env.PUBLIC_URL}/assets/Logo/14.png`,
+ `${process.env.PUBLIC_URL}/assets/Logo/15.png`,
+ `${process.env.PUBLIC_URL}/assets/Logo/16.png`,
 ];
 
 function Logo() {
