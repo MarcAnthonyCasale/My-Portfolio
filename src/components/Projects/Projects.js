@@ -39,6 +39,24 @@ const Projects = () => {
       image: `${process.env.PUBLIC_URL}/assets/image7.png`,
       link: "https://www.rspavingllc.com/",
     },
+    {
+      title: "AirFloat",
+      description: "Airfloat is a leader in material handling solutions, specializing in air caster technology that enables heavy-load movement with precision and ease.",
+      image: `${process.env.PUBLIC_URL}/assets/image9.png`,
+      link: "https://airfloat.com/",
+    },
+    {
+      title: "Align Production System",
+      description: "Align Production Systems delivers advanced material handling and motion control solutions designed to enhance efficiency and precision across industries.",
+      image: `${process.env.PUBLIC_URL}/assets/image4.png`,
+      link: "https://alignproductionsystems.com/",
+    },
+    {
+      title: "RampDD",
+      description: "RampDD is a cutting-edge platform specializing in digital transformation and custom software solutions. They empower businesses by providing tailored tools for streamlined operations, enhanced productivity, and scalable growth.",
+      image: `${process.env.PUBLIC_URL}/assets/image8.png`,
+      link: "https://rampdd.com/",
+    },
   ];
 
   return (
