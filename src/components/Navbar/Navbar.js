@@ -31,9 +31,10 @@ const Header = () => {
         </nav>
        
         <div className="hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
+          <span>About</span>
+          <span>Services</span>
+          <span>Portfolio</span>
+          <span>Contact</span>
         </div>
       </div>
     </header>

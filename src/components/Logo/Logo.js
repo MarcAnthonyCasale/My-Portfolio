@@ -5,7 +5,6 @@ const logos = [
  `${process.env.PUBLIC_URL}/assets/Logo/1.png`,
  `${process.env.PUBLIC_URL}/assets/Logo/2.png`,
  `${process.env.PUBLIC_URL}/assets/Logo/3.png`,
- `${process.env.PUBLIC_URL}/assets/Logo/4.png`,
  `${process.env.PUBLIC_URL}/assets/Logo/5.png`,
  `${process.env.PUBLIC_URL}/assets/Logo/6.png`,
  `${process.env.PUBLIC_URL}/assets/Logo/7.png`,
